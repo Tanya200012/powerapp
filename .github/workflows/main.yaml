@@ -1,0 +1,23 @@
+name: Build APK
+
+on:
+  push:
+    branches:
+      - main.yaml  # Replace with your preferred branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build APK
+      uses: reza-rahim/PowerApps-to-APK@v1
+      with:
+        appPackagePath: <path/to/your/.msapp/file>
+        outputPath: <path/to/output/directory>
