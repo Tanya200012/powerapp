@@ -20,4 +20,4 @@ jobs:
       uses: reza-rahim/PowerApps-to-APK@v1
       with:
         appPackagePath: N72fe6857-eacd-48d5-848d-21fef193684c-document.msapp
-        outputPath: "C:\Users\91955\Downloads\tanya_20230420064304\Microsoft.PowerApps\apps\7870647408435244221\N72fe6857-eacd-48d5-848d-21fef193684c-document.msapp"
+        
